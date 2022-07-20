@@ -11,14 +11,14 @@ function nitin(){
     {
         mains.classList.add('main2')
         mains.classList.remove('main1')
-        body.style.overflow = "hidden"
+        body.style.overflowY = "hidden"
         
     }
     else if(mains.className.includes('main2'))
     {
         mains.classList.add('main1')
         mains.classList.remove('main2')
-        body.style.overflow = "visible"
+        body.style.overflowY= "visible"
         
     }
 }
