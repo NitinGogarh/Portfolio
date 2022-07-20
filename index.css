@@ -1,0 +1,811 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width:12px
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(13, 13, 18);
+}
+::-webkit-scrollbar-thumb
+{
+    background:linear-gradient(aqua,pink);
+    border-radius: 5px;
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+.page1 img{
+    width: 90px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: black;
+    align-items: center;
+    margin: 0%;
+    height: 65px;
+    position: static;
+    top:0;
+    opacity: 100%;
+    
+    width: 100%;
+}
+.child1 button:hover {
+    transform: rotateZ(14400deg);
+    transition: 10s;
+  }
+button img,button{
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    padding: 0%;
+    
+}
+.hamburger{
+    color: white;
+    font-size: 30px;
+    display: none;
+    margin-right: 30px;
+    background-color: transparent;
+}
+.hamburger1{
+    display: none;
+}
+.navitems{
+    display:flex;
+    flex-direction: row;
+    margin: 7px;
+    font-size: 18px;
+}
+
+.navitems a{
+    padding: 7px;
+    margin: 7px;
+    color: azure;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.navbar h1{
+    padding: 7px;
+    margin: 7px;
+    color: azure;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    font-size: 33px;
+    font-weight: 900;
+    margin-left: 35px;
+    background: linear-gradient(aqua,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navitems a:hover{
+    background-color: aqua;
+     border-radius: 6px;
+     color: cadetblue;
+}
+
+#home{
+    margin: 0%;
+    background: url(16607.gif);
+    height: 97vh;
+   width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ object-fit: cover;
+    
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightarrow{
+    position: fixed;
+
+}
+.arrow{
+    color: white;
+    font-size: 35px;
+}
+.rightarrow:hover .arrow{
+    transform: scale(1.2);
+    color: aqua;
+}
+.intro{
+  
+    background-image: linear-gradient(aqua,white,aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   font-size: 34px;
+   font-weight: 500;
+    text-align: center;
+    -webkit-text-stroke: 0.3px rgb(138, 26, 121);
+    font-family: 'Dosis', sans-serif;
+}
+.name{
+    position: relative;
+    font-size: 55px;
+    color:transparent;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+  margin-bottom: 17px;
+   
+}
+.name::before{
+    content: "Hi, It's me Nitin Gogarh";
+    
+    position: absolute;
+    background: -webkit-linear-gradient(rgb(238, 238, 238), rgb(15, 117, 145));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+     overflow: hidden;
+    animation: animate 4s linear infinite;
+    -webkit-animation:animate 4s linear infinite ;
+    border-right: 2px white solid;
+}
+/* .anotherone::before{
+    content: "Nitin Gogarh";
+    
+    position: absolute;
+    background: -webkit-linear-gradient(rgb(238, 238, 238), rgb(15, 117, 145));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+     overflow: hidden;
+    animation: animate 4s linear infinite;
+    -webkit-animation:animate 4s linear infinite ;
+    border-right: 2px white solid;
+} */
+@keyframes animate{
+    0%,10%,100%{ 
+        width:0
+    }
+    70%,90%{
+        width:100%
+    }
+}
+#about{
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+}
+#heading{
+    background: -webkit-linear-gradient(aqua, rgb(209, 11, 117));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 42px;
+  font-family: 'Dosis', sans-serif;
+}
+.about{
+    min-height: 75vh;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutimg{
+    height: 250px;
+    width: 250px;
+    margin: 40px;
+    margin-left: 60px;
+    border-radius: 50%;
+    transition: transform .2s;
+    object-fit: cover;
+    border: 4px solid rgb(11, 186, 171);
+}
+.aboutimg:hover{
+    transform: scale(1.3);
+}
+.aboutinfo{
+    color: white;
+    margin: 40px;
+    font-size: 24px;
+    width: 60%;
+    line-height: 29px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.aboutinfo p{
+    font-size: 35px;
+}
+.hand{
+    color: #faaca8;
+    width: 34px;
+}
+.line{
+    margin-top: 37px;
+    margin-bottom: 17px;
+    border-top: 6px solid aqua;
+    border-image: linear-gradient(to right, aqua, darkorchid) 1;
+    border-radius: 56px;
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0%;
+
+}
+#study,#projects,#contact,#education{
+    text-align: center;
+     
+}
+
+.study{
+    min-height: 75vh;
+  display: flex;
+    background-color: black;
+justify-content: center;
+
+}
+
+.html{
+    cursor: pointer;
+    color: azure;
+    width: 22vw;
+    height: 198px;
+    border: 3px solid transparent;
+    /* border-image: linear-gradient(to right, aqua, rgb(15, 173, 241)) 2; */
+    padding: 15px;
+    border-radius: 16px;
+  background: linear-gradient(to right ,#ddd6f3 ,#faaca8);
+    
+   
+    /* box-shadow: 0 3px 9px black, inset 0 0 9px white; */
+
+}
+
+
+.html h2{
+    font-family: 'Dosis', sans-serif;
+    margin: 19px;
+    font-size: 37px;
+    margin-top: 15px;
+    background: -webkit-linear-gradient(rgb(180, 11, 189), rgb(32, 118, 210));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.coveredtopics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    
+}
+.photo,.mongo{
+    font-size: 70px;
+    width: 70px;
+    font-style: normal;
+    color: black;
+    }
+
+ .loading{
+    background-color: white;
+    border-radius: 14px;
+    
+    margin: 4px;
+    margin-bottom: 8px;
+ position: relative;
+ 
+ height: 10px;
+ }  
+ .loading::before{
+    content: "";
+    position: absolute;
+  
+    background:linear-gradient(to right, rgb(0, 68, 255) , rgb(26, 183, 210));
+    top: 0;
+    left: 0%;
+    height: 10px;
+
+    border-radius: 14px;
+ } 
+ .cload::before{
+    width: 80%;
+ }
+ .nodeload::before{
+    width: 87%;
+ }
+ .gitload::before{
+    width: 90%;
+ }
+ .mongoload::before{
+    width: 88%;
+ }
+ .htmlload::before{
+    width: 99%;
+ }
+ .cssload::before{
+   width: 85%
+ }
+ .jsload::before{
+    width: 92%;
+    }
+.reactload::before{
+    width: 90%;
+}
+
+.loading span{
+    
+    position: absolute;
+    background-color: aqua;
+    top: 18px;
+    height: 20px;
+    width: 12%;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+   }
+   .loading span::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color: transparent;
+    border-bottom-color:aqua ;
+    bottom: 19px;
+    left: 20%;
+    margin: 0%;
+
+   }
+   .cload span{
+    left: 74%;
+ }
+ .nodeload span{
+    left: 81%;
+ }
+ .gitload span{
+    left: 84%;
+ }
+ .mongoload span{
+    left: 82%;
+ }
+ .htmlload span{
+  left: 93%;
+
+ }
+ .cssload span{
+   left: 79%
+ }
+.reactload span{
+    left: 84%;
+}
+.jsload span{
+left: 86%;
+}
+.projects{
+    margin-top: 35px;
+    position: relative;
+    min-height: 75vh;
+}
+.projects div{
+
+    margin: 8px;
+   
+    border-radius: 16px;
+   width: 50%;
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+    box-shadow: 0 3px 9px rgb(160, 74, 74), inset 0 0 9px white;
+
+}
+.projectchild1{
+    top: 0px;
+  position: absolute;
+  left:80px
+   
+}
+.projectchild2{
+    top: 30%;
+    position: absolute;
+    left:290px
+}
+.projectchild3{
+    position: absolute;
+    left:80px;
+    top: 60%;
+}
+.projectlink{
+   color: white;
+   
+    text-decoration: none;
+    font-size: 40px;
+    padding: 13px;
+    margin-right: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s ease;
+}
+.projectimg{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 13px;
+    margin-left: 35px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.projectlink:hover{
+    color:aqua;
+    transform: scale(1.2);
+}
+.projectimg:hover{
+    transform: scale(1.4);
+}
+.contactimg{
+    color: rgb(198, 198, 34);
+    font-size: 32px;
+    transition: transform 0.5s;
+}
+.contactimg:hover{
+    transform: scale(1.2);
+}
+.contact h1{
+    font-size: 36px;
+    color: rgb(207, 176, 19);
+
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactinfo{
+    margin-left: 100px;
+}
+.contactinfo div{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.contactinfo div p{
+    color: white;
+    font-size: 26px;
+    margin-left: 15px;
+}
+.mail{
+    margin-right: 30%;
+}
+.mail button{
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 16px;
+    margin-top: 70px;
+    background-color: antiquewhite;
+    transition: transform 0.5s
+}
+.mail button:hover{
+    transform: scale(1.2);
+    background: linear-gradient(to right ,rgb(206, 44, 69),pink);
+}
+.cap{
+    color: aquamarine;
+    font-size: 40px;
+    margin: 12px;
+}
+.education{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     min-height: 50vh;
+}
+.education div h3{
+    color: rgb(10, 198, 183);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.education div h1{
+color: rgb(219, 219, 28);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.educhild{
+    margin: 15px;
+    border-left: 2px solid yellow;
+    width: fit-content;
+    padding: 0%;
+}
+.educhild button{
+    background-color: #ddd6f3;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 19px;
+    height: fit-content;
+}
+.firsteduchild{
+    border: none;
+}
+.education div h2{
+    font-size: 21px;
+    margin: 8px;
+    color: rgb(18, 141, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.educationline{
+    margin-top: 37px;
+    margin-bottom: 17px;
+    border-top: 6px solid aqua;
+    border-image: linear-gradient(to right, rgb(170, 255, 0), darkorchid) 1;
+    border-radius: 56px;
+    
+    margin-left: 43%;
+    margin-right: 43%;
+    padding: 0%;
+}
+.educationlast{
+    border-right: 4px solid yellow;  
+}
+.anotherone{
+    display: none;
+    
+}
+.send{
+    color: rgb(9, 9, 5);
+    font-size: 35px;
+    /* background-color: aliceblue; */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 36vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+  }
+  .main1 {
+    transform: translateX(-100%);
+    transition: transform 1.2s;
+  }
+  .main2 {
+    transform: translateX(0%);
+    transition: transform 1.2s;
+  }
+  .child1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+  .child1 h2 {
+    font-size: 30px;
+    margin: 0px;
+    color: rgb(30, 237, 171);
+    text-shadow: 4px 4px 5px grey;
+    font-weight: bolder;
+  }
+  .child1 button {
+    margin: 5px;
+  }
+  
+  .child2 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .child2 a {
+    text-decoration: none;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: medium;
+    color: rgb(32, 207, 199);
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  .child2 a:hover {
+    background-color: grey;
+  }
+  .child3 {
+    list-style: none;
+    padding: 0%;
+    text-align: center;
+  }
+  li {
+    display: inline;
+  }
+  .child3 li a img {
+    width: 33px;
+    height: 33px;
+    margin: 7px;
+    padding: 2px;
+  }
+  .child3 li a img:hover {
+   transform: scale(1.2);
+  }
+ 
+.footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 16, 16);
+    color: white;
+    padding-top: 10px;
+}
+.list{
+    display: flex;
+    margin-top: 5px;
+
+}
+.footer h1{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+.footer p{
+    margin: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+.listchild{
+    border-right: 2px solid white;
+    margin: 5px;
+    padding-right: 19px;
+    padding-left: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+} 
+.lastlist{
+border-color: transparent;
+
+}
+.social{
+    font-size: 21px;
+    width: 22px;
+    margin-left: 20px;
+    
+}
+.social:hover{
+    color: aqua;
+   
+}
+.socialphotos{
+    margin-bottom: 10px;
+}
+@media screen and (max-width:810px){
+    .navbar h1{
+        display: none;
+    }
+    .navbar{
+        
+        justify-content: center;
+    }
+    .projects div{
+        position: static;
+        width: fit-content;
+        margin-top: 40px;
+    }
+    .projects{
+       min-height: 50vh;
+       position: static;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       /* justify-content: center; */
+    }
+    .about{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:760px)
+{  .hamburger1{
+    display: block;
+}
+    .navbar{
+        justify-content: space-between;
+       
+    }
+    .navbar h1{
+        display: block;
+        margin: 0%;
+    }
+    .education{
+        flex-direction: column;
+    }
+    .education div{
+        border: none;
+    }
+    .coveredtopics{
+        grid-template-columns: 1fr ;
+        width: 85%;
+    }
+    .navitems{
+    display: none;
+    } 
+    .html{
+        width: 90%;
+    }
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactinfo{
+        margin: 0px;
+    }
+    .mail{
+        margin: 0px;
+    }
+    .firstone{
+        display: none;
+    }
+    .anotherone{
+        display:block
+    }
+    .projectimg{
+        width: 85px;
+        height: 85px;
+        margin: 0%;
+    }
+    .name::before{
+        content: "Hi, It's me Nitin";
+        
+    }
+    .educationline{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .line{
+        margin: 5%;
+    }
+    .main{
+        width:90vw
+    }
+    .child3 li a img{
+        padding: 16px;
+    }
+    .list{
+        display: none;
+    }
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 9999;
+
+}
+.page2{
+display: none;
+
+}
