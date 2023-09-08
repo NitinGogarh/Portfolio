@@ -24,8 +24,3 @@ function nitin(){
 }
 cross.addEventListener('click',nitin)
 
-function preloader()
-{
-    page2.style.display="block"
-    page1.style.display="none"
-}
